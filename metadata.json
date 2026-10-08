@@ -1,0 +1,6 @@
+{
+  "name": "GDGoC Aswan Pirate Expedition - Set Sail with the Crew",
+  "description": "Interactive orientation landing page for Google Developer Groups on Campus Aswan. Explore the nautical treasure map, discover the 5 technical crews, and enlist for the voyage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

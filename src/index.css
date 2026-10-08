@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #060b13;
+    color: #ede5d0;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-mono-data {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom parchment texture and maritime subtle patterns */
+.parchment-texture {
+  background-color: #f4ebd0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(217, 182, 128, 0.15) 0%, rgba(143, 105, 50, 0.25) 100%),
+    radial-gradient(circle at 10% 20%, rgba(175, 131, 68, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(138, 97, 43, 0.25) 0%, transparent 40%);
+  box-shadow: inset 0 0 50px rgba(92, 59, 21, 0.4), inset 0 0 100px rgba(50, 28, 6, 0.3);
+}
+
+.dark-parchment {
+  background-color: #121c2b;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.04) 0%, transparent 80%),
+    linear-gradient(to bottom, rgba(10, 18, 30, 0.8), rgba(7, 13, 22, 0.95));
+}
+
+.ocean-gradient {
+  background: radial-gradient(ellipse at 50% 30%, #0c2038 0%, #071224 50%, #040913 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 45px rgba(245, 158, 11, 0.55), 0 0 15px rgba(251, 191, 36, 0.4);
+}
+
+/* Nautical map grid lines */
+.chart-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(217, 182, 128, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 182, 128, 0.06) 1px, transparent 1px);
+}
+
+@keyframes gentle-bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.8deg);
+  }
+}
+
+.animate-bob {
+  animation: gentle-bob 4s ease-in-out infinite;
+}
